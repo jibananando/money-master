@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <main class="contaier mx-auto">
+        <h1 class="text-6xl text-center mt-4 mb-4 font-medium text-blue-800">Money Master</h1>
+        <div class="grid grid-cols-2 mx-auto">
+            <div class=""><img src="money-master.jpg" alt=""></div>
+            <div class="mx-auto">
+                <!-- Icome area -->
+                <div>
+                    <h1 class="text-3xl font-semibold mb-2">Income</h1>
+                    <input id="icome-field" class="px-4 py-2 border rounded block " type="text"
+                        placeholder="Your Income $">
+                </div>
+                <!-- Expenses area -->
+                <h1 class="text-3xl font-semibold mt-4 mb-2">Expenses</h1>
+                <div>
+                    <div class="w-1/2 grid grid-cols-2 mt-2">
+                        <h1 class="text-lg font-bold">Food:</h1>
+                        <input id="food-field" class="px-4 py-1 border rounded block" type="text" placeholder="$">
+                    </div>
+                    <div class="w-1/2 grid grid-cols-2 mt-2">
+                        <h1 class="text-lg font-bold">Rent:</h1>
+                        <input id="rent-field" class="px-4 py-1 border rounded block" type="text" placeholder="$">
+                    </div>
+                    <div class="w-1/2 grid grid-cols-2 mt-2">
+                        <h1 class="text-lg font-bold">Clothes:</h1>
+                        <input id="clothes-field" class="px-4 py-1 border rounded block" type="text" placeholder="$">
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 w-auto gap-2">
+                    <button id="claculation-field"
+                        class="bg-blue-800 px-4 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600">Calculate
+                    </button>
+                    <h2 class="text-lg bg-blue-100 rounded my-auto px-4 py-2 mt-4">Total Expenses:<span
+                            id="expenses-filed">5500</span>
+                    </h2>
+                    <h2 class="text-lg bg-blue-100 rounded my-auto px-4 py-2 mt-4">Balance:<span
+                            id="balance-field">4500</span></h2>
+                </div>
+                <!-- Saving area -->
+                <div class="w-1/2 grid grid-cols-2 mt-6">
+                    <h1 class="text-lg font-bold">Save:</h1>
+                    <input id="saving-field" class="px-4 py-1 border rounded block" type="text" placeholder="%">
+                </div>
+                <div class="grid grid-cols-3 w-auto gap-2 mt-2">
+                    <button id="saveing-btn"
+                        class="bg-blue-800 px-4 py-2 text-white rounded-lg mt-4 font-medium hover:bg-blue-600">Save
+                    </button>
+                    <h2 class="text-lg bg-blue-100 rounded my-auto px-4 py-2 mt-4">Saving Amount:<span
+                            id="discount-field">2000</span>
+                    </h2>
+                    <h2 class="text-lg bg-blue-100 rounded my-auto px-4 py-2 mt-4">Remaining:<span
+                            id="remaining-field">2500</span>
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="js/calculation.js"></script>
+</body>
+
+</html>
