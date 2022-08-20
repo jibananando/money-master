@@ -31,7 +31,7 @@ document.getElementById('claculation-field').addEventListener('click', function 
 document.getElementById('saveing-btn').addEventListener('click', function () {
     const persentField = document.getElementById('saving-field');
     const persentAmount = parseInt(persentField.value);
-    persentField.value = '';
+    // persentField.value = '';
 
     const afterExpensesBalance = document.getElementById('balance-field');
     const afterExpensesAmount = parseInt(afterExpensesBalance.innerText);
