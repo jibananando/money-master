@@ -4,13 +4,13 @@ document.getElementById('claculation-field').addEventListener('click', function 
 
     const foodField = document.getElementById('food-field');
     const foodAmount = parseInt(foodField.value);
-    foodField.value = '';
+    // foodField.value = '';
     const rentField = document.getElementById('rent-field');
     const rentAmount = parseInt(rentField.value);
-    rentField.value = '';
+    // rentField.value = '';
     const clothesField = document.getElementById('clothes-field')
     const clothesAmount = parseInt(clothesField.value);
-    clothesField.value = '';
+    // clothesField.value = '';
 
     // Total expenses
     const expensesTotal = foodAmount + rentAmount + clothesAmount;
@@ -20,7 +20,7 @@ document.getElementById('claculation-field').addEventListener('click', function 
     // balance calculation
     const incomeField = document.getElementById('icome-field')
     const icomeAmount = parseFloat(incomeField.value);
-    incomeField.value = '';
+    // incomeField.value = '';
     const ExtrBalance = icomeAmount - expensesTotal;
     const balance = document.getElementById('balance-field');
     balance.innerText = ExtrBalance;
